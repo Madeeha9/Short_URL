@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analysis</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="inputContainer">
+      <h1>Your Short Links Analytics</h1>
+
+      <div class="tableContainer">
+        <% if (shortLinks.length === 0) { %>
+        <p>No short links created yet.</p>
+        <% } else { %>
+        <table>
+          <tr>
+            <th>Original URL</th>
+            <th>Short URL</th>
+            <th>Created At</th>
+            <th>Expires At</th>
+            <th>Clicks</th>
+            <th>Last Accessed</th>
+          </tr>
+          <% shortLinks.forEach(link => { %>
+          <tr>
+            <td><%= link.originalUrl %></td>
+            <td><%= link.shortUrl %></td>
+            <td><%= link.createdAt %></td>
+            <td><%= link.expiresAt %></td>
+            <td><%= link.clicks %></td>
+            <td><%= link.lastAccessedAt || 'Never' %> <% }); %></td>
+          </tr>
+        </table>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+
+    <div class="inputContainer">
+      <h1>Welcome, <%= username %>!</h1>
+      <div>
+        <a class="btn" href="/create-url">Create Short Link</a>
+        <a class="btn" href="/analysis">View Analytics</a>
+      </div>
+
+      <span>
+        <form action="/logout" method="get">
+          <button class="btn" type="submit">Logout</button>
+        </form>
+      </span>
+    </div>
+  </body>
+</html>

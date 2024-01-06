@@ -1,0 +1,86 @@
+@import "theme.css";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bodyBgColor);
+    font-size: var(--textSmall);
+    color: var(--bodyTextColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputContainer{
+    margin: 20px 20px 20px 20px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+    background: #2B3A55;
+    padding: 5px 15px 5px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    gap: 2rem;
+}
+
+.tableContainer{
+    margin: 20px 20px 20px 20px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+    background: #2B3A55;
+    padding: 5px 15px 5px 15px;
+    border-radius: 8px;
+    display: flex;
+}
+
+.labels{
+    color: var(--bodyTextColor);
+    font-size: var(--textMedium);
+    margin-right: 12px;
+    font-weight: 500;
+    width: 24%;
+    display: flex;
+    align-items: center;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+}
+
+.inputClass{
+    width: 88%;
+    height: 48px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+}
+
+h1{
+    margin: 20px 20px 20px 20px;
+    color: var(--bodyTextColor);
+    padding: 5px 15px 5px 15px;
+}
+
+.btn{
+    background-color: var(--btnBgColor);
+    color: var(--btnTextColor);
+    margin: 20px 20px 20px 20px;
+    border-radius: 8px;
+    border-style: 2px solid;
+    padding: 10px 10px;
+}
+
+.btn:hover{
+    background-color: var(--hoverColor);
+}
+
+th{
+    padding: 20px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: var(--textSmall);
+    color: var(--bodyTextColor);
+    text-transform: uppercase;
+}
+
+td{
+    /* padding: 15px 15px; */
+    text-align: center;
+    font-weight: 300;
+    font-size: var(--textSmall);
+    color: var(--bodyTextColor);
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+}
